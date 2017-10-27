@@ -4,7 +4,8 @@
   "description": "Showcase of my works",
   "main": "index.html",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "dev": "./node_modules/.bin/gulp dev"
   },
   "repository": {
     "type": "git",
@@ -29,11 +30,13 @@
     "eslint-config-google": "^0.9.1",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
+    "gulp-live-server": "0.0.31",
     "gulp-sass": "^3.1.0",
     "gulp-typescript": "^3.2.3",
-    "gulp-uglify": "^3.0.0",
+    "live-server": "^1.2.0",
     "mocha": "^4.0.1",
     "sinon": "^4.0.2",
     "typescript": "^2.5.3"
-  }
+  },
+  "dependencies": {}
 }
