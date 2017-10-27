@@ -1,0 +1,39 @@
+{
+  "name": "ivans1991.github.io",
+  "version": "1.0.0",
+  "description": "Showcase of my works",
+  "main": "index.html",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IvanS1991/ivans1991.github.io.git"
+  },
+  "keywords": [
+    "Web",
+    "JS",
+    "showcase",
+    "portfolio"
+  ],
+  "author": "IvanS1991, Ivan Shtarbanov <ivan.shtarbanov1991@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IvanS1991/ivans1991.github.io/issues"
+  },
+  "homepage": "https://github.com/IvanS1991/ivans1991.github.io#readme",
+  "devDependencies": {
+    "babel-eslint": "^8.0.1",
+    "chai": "^4.1.2",
+    "eslint": "^4.9.0",
+    "eslint-config-google": "^0.9.1",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-typescript": "^3.2.3",
+    "gulp-uglify": "^3.0.0",
+    "mocha": "^4.0.1",
+    "sinon": "^4.0.2",
+    "typescript": "^2.5.3"
+  }
+}
