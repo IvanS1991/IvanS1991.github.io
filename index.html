@@ -10,6 +10,17 @@
 
 <body>
   <h1>Works!</h1>
+  <h2 id="test"></h2>
+  <script src="./node_modules/systemjs/dist/system.js"></script>
+  <script>
+    System.config({
+      map: {
+        'jquery': './node_modules/jquery/dist/jquery.js',
+        'app': './dist/js/app.js'
+      }
+    });
+    System.import('app');
+  </script>
 </body>
 
 </html>

@@ -3,6 +3,7 @@ const tsc = require('gulp-typescript').createProject('tsconfig.json');
 const sass = require('gulp-sass');
 const clean = require('gulp-clean');
 const ls = require('gulp-live-server');
+const childProcess = require('child_process');
 
 gulp.task('clean:js', () => {
   return gulp.src(`./dist/js/*`)
@@ -34,14 +35,13 @@ gulp.task('watch:scss', ['compile:scss'], () => {
   return gulp.watch(`src/scss/**/*.scss`, ['compile:scss']);
 });
 
-gulp.task('live-server', () => {
+gulp.task('dev', ['watch:scss', 'watch:ts'], () => {
   const server = ls.static('.', 8000);
   server.start();
-  return gulp.watch(['static/**/*.*'], (file) => {
+  gulp.watch('static/**/*.*', (file) => {
     server.notify.apply(server, [file]);
   });
+  childProcess.exec('google-chrome-stable http://localhost:8000');
 });
-
-gulp.task('dev', ['watch:scss', 'watch:ts', 'live-server']);
 
 gulp.task('default', ['dev']);
