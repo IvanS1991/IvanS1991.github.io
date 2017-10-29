@@ -1,8 +1,10 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "allowJs": true,
     "sourceMap": true,
     "declaration": false,
+    "module": "system",
     "moduleResolution": "node",
     "target": "es5",
     "lib": [
