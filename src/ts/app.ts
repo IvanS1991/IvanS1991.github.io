@@ -1,5 +1,6 @@
-import 'jquery';
+import * as nav from './components/nav';
 
-$('h1').on('click', () => {
-  console.log('Works!');
+nav.init({
+  nav: 'nav',
+  button: 'nav__button'
 });

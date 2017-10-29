@@ -2,6 +2,9 @@ const gulp = require('gulp');
 const tsc = require('gulp-typescript').createProject('tsconfig.json');
 const sass = require('gulp-sass');
 const clean = require('gulp-clean');
+const uglify = require('gulp-uglify');
+const concat = require('gulp-concat');
+const clip = require('gulp-clip-empty-files');
 const ls = require('gulp-live-server');
 const childProcess = require('child_process');
 
@@ -18,12 +21,15 @@ gulp.task('clean:css', () => {
 gulp.task('compile:ts', ['clean:js'], () => {
   return gulp.src(`src/ts/**/*.ts`)
     .pipe(tsc())
+    .pipe(clip())
+    .pipe(uglify())
     .pipe(gulp.dest('./dist/js'));
 });
 
 gulp.task('compile:scss', ['clean:css'], () => {
   return gulp.src(`src/scss/**/*.scss`)
     .pipe(sass().on('error', sass.logError))
+    .pipe(concat('styles.css'))
     .pipe(gulp.dest('dist/css'));
 });
 

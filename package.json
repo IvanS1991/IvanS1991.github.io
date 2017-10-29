@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/IvanS1991/ivans1991.github.io#readme",
   "devDependencies": {
+    "@types/handlebars": "^4.0.36",
     "@types/jquery": "^3.2.15",
     "babel-eslint": "^8.0.1",
     "chai": "^4.1.2",
@@ -31,6 +32,8 @@
     "eslint-config-google": "^0.9.1",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
+    "gulp-clip-empty-files": "^0.1.2",
+    "gulp-concat": "^2.6.1",
     "gulp-live-server": "0.0.31",
     "gulp-sass": "^3.1.0",
     "gulp-typescript": "^3.2.3",
@@ -41,7 +44,9 @@
     "typescript": "^2.5.3"
   },
   "dependencies": {
+    "handlebars": "^4.0.11",
     "jquery": "^3.2.1",
+    "normalize.css": "^7.0.0",
     "systemjs": "^0.20.19"
   }
 }
