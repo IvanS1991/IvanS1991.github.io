@@ -1,3 +1,20 @@
-.test {
-  display: none;
+.main-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+
+}
+
+.content {
+  height: 79.9%;
+}
+
+.footer {
+  background-color: lightgreen;
+  height: 15%;
 }
