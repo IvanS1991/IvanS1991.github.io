@@ -1,0 +1,42 @@
+$nav__button-padding: 1em 0;
+
+$nav__button-background_active: lightgreen;
+
+$nav__button-background_hover: brown;
+
+.nav {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  @media (max-width: $screen-medium) {
+    display: block;
+    margin-top: 0;
+  }
+  &__item {
+    width: 25%;
+    @media (max-width: $screen-medium) {
+      width: 100%;
+    }
+  }
+
+  &__button {
+    display: block;
+    width: 100%;
+    padding: $nav__button-padding;
+    color: black;
+    text-decoration: none;
+    font-weight: 800;
+    text-align: center;
+    transition: background-color $transition-delay, color $transition-delay;
+    &_active {
+      background-color: $nav__button-background_active;
+    }
+    &:hover {
+      color: $nav__button-background_active;
+      background-color: $nav__button-background_hover;
+    }
+  }
+}
