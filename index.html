@@ -11,24 +11,34 @@
 </head>
 
 <body>
-  <nav class="nav-main">
-    <ul class="nav">
-      <li class="nav__item">
-        <a href="#" class="nav__button nav__button_active">Home</a>
-      </li>
-      <li class="nav__item">
-        <a href="#" class="nav__button">Projects</a>
-      </li>
-      <li class="nav__item">
-        <a href="#" class="nav__button">About</a>
-      </li>
-      <li class="nav__item">
-        <a href="#" class="nav__button">Contacts</a>
-      </li>
-    </ul>
-  </nav>
+  <div class="main-wrapper">
+    <header class="header">
+      <nav class="nav-main">
+        <ul class="nav">
+          <li class="nav__item">
+            <a href="#" class="nav__button nav__button_active">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__button">Projects</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__button">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__button">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="content">
 
-  <script src="./node_modules/systemjs/dist/system.js"></script>
+    </section>
+    <footer class="footer">
+
+    </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.20.19/system.js"></script>
   <script>
     System.config({
       packages: {
@@ -37,8 +47,8 @@
         }
       },
       map: {
-        'jquery': './node_modules/jquery/dist/jquery.js',
-        'handlebars': './node_modules/handlebars/dist/handlebars.min.js',
+        'jquery': 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js',
+        'handlebars': 'https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js',
         'app': './dist/js/app.js'
       }
     });

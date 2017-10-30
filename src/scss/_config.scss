@@ -1,2 +1,11 @@
 $baseFontSize: 16px;
 $baseFontFamily: sans-serif;
+
+body {
+  box-sizing: border-box;
+  font-size: $baseFontSize;
+  font-family: $baseFontFamily;
+  @media (min-width: $screen-xl) {
+    font-size: 2 * $baseFontSize;
+  }
+}
