@@ -1,0 +1,1 @@
+System.register(["jquery"],function(t,n){"use strict";var e;n&&n.id;return{setters:[function(t){}],execute:function(){t("init",e=function(t){var n=$("."+t.nav),e=$("."+t.nav+" ."+t.button),a=t.button+"_active";n.on("click",function(n){n.preventDefault();var r=$(n.target);r.hasClass(t.button)&&(e.removeClass(a),r.addClass(a))})})}}});

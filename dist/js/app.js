@@ -1,0 +1,1 @@
+System.register(["./components/nav"],function(t,n){"use strict";var e;n&&n.id;return{setters:[function(t){e=t}],execute:function(){e.init({nav:"nav",button:"nav__button"})}}});
