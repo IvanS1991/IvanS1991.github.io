@@ -66,6 +66,7 @@ body {
 
 .nav__button, .nav__mobile {
   background-color: lightgreen;
+  box-sizing: border-box;
   border: 1px solid #adadad;
   width: 100%;
   padding: 1em 0;

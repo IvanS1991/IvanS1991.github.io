@@ -59,6 +59,7 @@ $nav__button-background_hover: brown;
 
   &__button, &__mobile {
     background-color: $nav__button-background;
+    box-sizing: border-box;
     border: $nav__button-border;
     width: 100%;
     padding: $nav__button-padding;

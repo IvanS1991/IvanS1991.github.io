@@ -18,6 +18,7 @@ System.register(["./utils/event-emitter", "./utils/fetch"], function (exports_1,
             $context = $('.content');
             emitter.on('page-change', function (page) {
                 var template;
+                $("#" + page).addClass('nav__button_active');
                 return fetch.template(page)
                     .then(function (output) {
                     template = output;

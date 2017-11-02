@@ -8,4 +8,6 @@ nav.init({
   button: 'nav__button'
 });
 
-emitter.emit('page-change', 'home');
+const currentPage = sessionStorage.getItem('currentPage') || 'home';
+
+emitter.emit('page-change', currentPage);
