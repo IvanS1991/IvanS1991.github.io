@@ -1,0 +1,24 @@
+{
+  "en": {
+    "name": "Ivan Shtarbanov",
+    "job": "Front-end web developer",
+    "briefIntro": "Hello, my name is Ivan, I am 26 years old and I am aspiring to become a front-end web developer. I have experience with most major front-end technologies, but I've also worked with some back-end technologies as well. I excel in pure JavaScript, including the newest ECMAscript standards. Click the button below to find more about me and my skills.",
+    "perks": [
+      {
+        "symbol": "../img/zoom.svg",
+        "name": "Attention to even the smallest detail",
+        "summary": ""
+      },
+      {
+        "symbol": "../img/clock.svg",
+        "name": "Ability to meet deadlines",
+        "summary": ""
+      },
+      {
+        "symbol": "../img/smile.svg",
+        "name": "Honesty and understanding",
+        "summary": ""
+      }
+    ]
+  }
+}
