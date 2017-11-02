@@ -1,7 +1,7 @@
 System.register(["./components/nav", "./page-events"], function (exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
-    var nav, page_events_1;
+    var nav, page_events_1, currentPage;
     return {
         setters: [
             function (nav_1) {
@@ -18,7 +18,8 @@ System.register(["./components/nav", "./page-events"], function (exports_1, cont
                 mobile: 'nav__mobile',
                 button: 'nav__button'
             });
-            page_events_1.emitter.emit('page-change', 'home');
+            currentPage = sessionStorage.getItem('currentPage') || 'home';
+            page_events_1.emitter.emit('page-change', currentPage);
         }
     };
 });

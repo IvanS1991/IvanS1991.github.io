@@ -8,6 +8,7 @@ const $context = $('.content');
 
 emitter.on('page-change', (page) => {
   let template;
+  $(`#${page}`).addClass('nav__button_active');
   return fetch.template(page)
     .then((output) => {
       template = output;

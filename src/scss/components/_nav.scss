@@ -1,8 +1,11 @@
 $nav__button-padding: 1em 0;
-
-$nav__button-background_active: lightgreen;
-
+$nav__button-border: 1px solid rgb(173, 173, 173);
+$nav__button-color: black;
+$nav__button-color_hover: lightgreen;
+$nav__button-background: lightblue;
+$nav__button-background_active: white;
 $nav__button-background_hover: brown;
+
 
 .nav {
   @media (max-width: $screen-medium) {
@@ -13,7 +16,7 @@ $nav__button-background_hover: brown;
   }
 
   &__container {
-    background-color: white;
+    background-color: $nav__button-background;
     display: flex;
     padding: 0;
     margin: 0;
@@ -44,7 +47,7 @@ $nav__button-background_hover: brown;
 
   &__mobile {
     background: {
-      color: lightgreen;
+      color: $nav__button-background;
       image: url('/resources/img/hamburger.svg');
       repeat: no-repeat
     };
@@ -55,18 +58,22 @@ $nav__button-background_hover: brown;
   }
 
   &__button, &__mobile {
+    background-color: $nav__button-background;
+    box-sizing: border-box;
+    border: $nav__button-border;
     width: 100%;
     padding: $nav__button-padding;
-    color: black;
+    color: $nav__button-color;
     text-decoration: none;
     font-weight: 800;
     text-align: center;
     transition: background-color $transition-delay, color $transition-delay;
     &_active {
       background-color: $nav__button-background_active;
+      border-bottom: 1px solid white;
     }
     &:hover {
-      color: $nav__button-background_active;
+      color: $nav__button-color_hover;
       background-color: $nav__button-background_hover;
     }
   }

@@ -1,1 +1,21 @@
 <h1>Home</h1>
+{{#with this.en}}
+  <div class="home-container">
+    <div class="image-container">
+      <img src="{{this.picture}}" class="image-container__image"/>
+      <h2 class="info-container__name">{{this.name}}</h2>
+    </div>
+    <div class="info-container">
+      <p class="info-container__brief-intro">{{this.briefIntro}}</p>
+    </div>
+  </div>
+  <div class="perks">
+    {{#each this.perks}}
+      <div class="perks__item">
+        <h2 class="perks__item__name">{{this.name}}</h2>
+        <img src="{{this.symbol}}" class="perks__item__symbol">
+        <p class="perks__item__summary">{{this.summary}}</p>
+      </div>
+    {{/each}}
+  </div>
+{{/with}}

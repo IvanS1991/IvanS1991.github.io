@@ -21,11 +21,13 @@ System.register(["jquery", "../page-events"], function (exports_1, context_1) {
                 $nav.on('click', function (event) {
                     event.preventDefault();
                     var $this = $(event.target);
+                    var currentPage = $this.html().toLowerCase();
                     if ($this.hasClass(selectors.button)) {
                         $buttons.removeClass(classActive);
                         $this.addClass(classActive);
-                        page_events_1.emitter.emit('page-change', $this.html().toLowerCase());
                         $navContainer.removeClass(classExpanded);
+                        page_events_1.emitter.emit('page-change', currentPage);
+                        sessionStorage.setItem('currentPage', currentPage);
                     }
                 });
                 $mobileTrigger.on('click', $mobileTrigger, function (event) {

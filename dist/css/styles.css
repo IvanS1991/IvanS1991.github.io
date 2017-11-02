@@ -1,12 +1,19 @@
 body {
   box-sizing: border-box;
   font-size: 16px;
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  text-align: center; }
   @media (min-width: 2000px) {
     body {
       font-size: 32px; } }
 
+h1 {
+  border-bottom: 1px solid grey;
+  padding: 1em; }
+
 .main-wrapper {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   top: 0;
   left: 0;
@@ -14,11 +21,18 @@ body {
   width: 100%; }
 
 .content {
-  height: 79.9%; }
+  padding: 1em 1em;
+  height: 88%; }
+  @media (max-width: 800px) {
+    .content {
+      padding: 1em 0; } }
 
 .footer {
-  background-color: lightgreen;
-  height: 15%; }
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: lightblue; }
 
 @media (max-width: 800px) {
   .nav {
@@ -28,7 +42,7 @@ body {
     width: 100%; } }
 
 .nav__container {
-  background-color: white;
+  background-color: lightblue;
   display: flex;
   padding: 0;
   margin: 0;
@@ -52,7 +66,7 @@ body {
   display: block; }
 
 .nav__mobile {
-  background-color: lightgreen;
+  background-color: lightblue;
   background-image: url("/resources/img/hamburger.svg");
   background-repeat: no-repeat;
   display: none; }
@@ -61,6 +75,9 @@ body {
       display: block; } }
 
 .nav__button, .nav__mobile {
+  background-color: lightblue;
+  box-sizing: border-box;
+  border: 1px solid #adadad;
   width: 100%;
   padding: 1em 0;
   color: black;
@@ -69,10 +86,81 @@ body {
   text-align: center;
   transition: background-color 200ms, color 200ms; }
   .nav__button_active, .nav__mobile_active {
-    background-color: lightgreen; }
+    background-color: white;
+    border-bottom: 1px solid white; }
   .nav__button:hover, .nav__mobile:hover {
     color: lightgreen;
     background-color: brown; }
 
-.content {
+.home-container {
+  display: flex;
+  padding: 2em; }
+  @media (max-width: 800px) {
+    .home-container {
+      flex-direction: column; } }
+
+.image-container__image {
+  width: 20em; }
+  @media (max-width: 800px) {
+    .image-container__image {
+      width: 80%; } }
+
+.info-container {
+  padding: 5em; }
+  @media (max-width: 800px) {
+    .info-container {
+      padding: 1em; } }
+  .info-container__brief-intro {
+    text-align: left;
+    line-height: 250%; }
+
+.perks {
+  display: flex;
+  justify-content: space-around;
   padding: 3em 1em; }
+  .perks__item {
+    width: 30%; }
+    .perks__item__symbol {
+      height: 5em; }
+      @media (max-width: 800px) {
+        .perks__item__symbol {
+          height: 2em; } }
+
+.form {
+  padding: 5em 2em; }
+  @media (max-width: 800px) {
+    .form {
+      padding: 1em 0; } }
+  .form__input, .form__textarea, .form__button {
+    display: block;
+    width: 40em;
+    box-sizing: border-box;
+    margin: 1em auto; }
+    @media (max-width: 800px) {
+      .form__input, .form__textarea, .form__button {
+        width: 100%; } }
+  .form__textarea {
+    height: 10em;
+    resize: none; }
+
+.project-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.project-card {
+  background-color: lightgreen;
+  margin: 2%;
+  padding: 3% 3%;
+  width: 22%; }
+  @media (max-width: 1440px) {
+    .project-card {
+      width: 38%; } }
+  @media (max-width: 800px) {
+    .project-card {
+      width: 100%; } }
+  .project-card__link {
+    color: black;
+    text-decoration: none; }
+    .project-card__link:hover {
+      color: brown; }

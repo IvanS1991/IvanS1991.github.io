@@ -22,7 +22,7 @@ gulp.task('compile:ts', ['clean:js'], () => {
   return gulp.src(`src/ts/**/*.ts`)
     .pipe(tsc())
     .pipe(clip())
-    // .pipe(uglify())
+    .pipe(uglify())
     .pipe(gulp.dest('./dist/js'));
 });
 

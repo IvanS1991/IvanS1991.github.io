@@ -1,4 +1,42 @@
 {
   "en": {
+    "list": [
+      {
+        "url": "https://github.com/IvanS1991/blog-frontend-course-project",
+        "name": "blog-frontend-course-project",
+        "description": "Course project for TA's Web Front-End course",
+        "mainLanguage": "JavaScript"
+      },
+      {
+        "url": "https://github.com/IvanS1991/angular-course-project",
+        "name": "angular-course-project",
+        "description": "Course project for TA's Web apps with Angular 2 course",
+        "mainLanguage": "TypeScript"
+      },
+      {
+        "url": "https://github.com/IvanS1991/nodejs-course-project",
+        "name": "nodejs-course-project",
+        "description": "Course project for TA's Web Front-End course",
+        "mainLanguage": "JavaScript"
+      },
+      {
+        "url": "https://github.com/IvanS1991/soccerway-scraper",
+        "name": "soccerway-scraper",
+        "description": "Football stats scraper for soccerway.com",
+        "mainLanguage": "JavaScript"
+      },
+      {
+        "url": "https://github.com/IvanS1991/art-1",
+        "name": "art-1",
+        "description": "Old website project",
+        "mainLanguage": "CSS"
+      },
+      {
+        "url": "https://github.com/IvanS1991/imdb-data-scraper",
+        "name": "imdb-data-scraper",
+        "description": "Course project for TA's Web Front-End course",
+        "mainLanguage": "JavaScript"
+      }
+    ]
   }
 }
