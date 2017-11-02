@@ -3,6 +3,7 @@ import { emitter } from '../page-events';
 
 const init = (selectors): void => {
   const $nav:JQuery = $(`.${selectors.nav}`);
+  const $navContainer: JQuery = $(`.${selectors.container}`);
   const $mobileTrigger: JQuery = $(`.${selectors.mobile}`);
   const $buttons: JQuery = $(`.${selectors.nav} .${selectors.button}`);
   const classActive: string = `${selectors.button}_active`;
@@ -14,6 +15,7 @@ const init = (selectors): void => {
       $buttons.removeClass(classActive);
       $this.addClass(classActive);
       emitter.emit('page-change', $this.html().toLowerCase());
+      $navContainer.removeClass(classExpanded);
     }
   });
 

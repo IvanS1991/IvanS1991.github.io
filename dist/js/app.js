@@ -14,6 +14,7 @@ System.register(["./components/nav", "./page-events"], function (exports_1, cont
         execute: function () {
             nav.init({
                 nav: 'nav',
+                container: 'nav__container',
                 mobile: 'nav__mobile',
                 button: 'nav__button'
             });
