@@ -15,16 +15,27 @@ System.register(["handlebars"], function (exports_1, context_1) {
                     this.contentRegistry = {};
                 }
                 Fetch.prototype.get = function (name, type, extension) {
+                    var _this = this;
                     var path = "/resources/" + type + "/" + name + "." + extension;
                     return new Promise(function (resolve, reject) {
+                        if (type === 'templates' && _this.templateRegistry[name]) {
+                            return resolve(_this.templateRegistry[name]);
+                        }
+                        if (type === 'content' && _this.contentRegistry[name]) {
+                            return resolve(_this.contentRegistry[name]);
+                        }
                         $.get(path, function (data) {
                             resolve(data);
                         });
                     });
                 };
                 Fetch.prototype.template = function (name) {
+                    var _this = this;
                     return this.get(name, 'templates', 'hbs')
                         .then(function (template) {
+                        if (!_this.templateRegistry[name]) {
+                            _this.templateRegistry[name];
+                        }
                         return handlebars_1.default.compile(template);
                     });
                 };

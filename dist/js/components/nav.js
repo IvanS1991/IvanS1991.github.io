@@ -13,6 +13,7 @@ System.register(["jquery", "../page-events"], function (exports_1, context_1) {
         execute: function () {
             init = function (selectors) {
                 var $nav = $("." + selectors.nav);
+                var $navContainer = $("." + selectors.container);
                 var $mobileTrigger = $("." + selectors.mobile);
                 var $buttons = $("." + selectors.nav + " ." + selectors.button);
                 var classActive = selectors.button + "_active";
@@ -24,6 +25,7 @@ System.register(["jquery", "../page-events"], function (exports_1, context_1) {
                         $buttons.removeClass(classActive);
                         $this.addClass(classActive);
                         page_events_1.emitter.emit('page-change', $this.html().toLowerCase());
+                        $navContainer.removeClass(classExpanded);
                     }
                 });
                 $mobileTrigger.on('click', $mobileTrigger, function (event) {

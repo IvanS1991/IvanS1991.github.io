@@ -26,24 +26,33 @@ class Fetch {
     this.contentRegistry = {};
   }
 
-  private get<T>(name: string, type: string, extension: string): Promise<T> {
+  private get(name: string, type: string, extension: string): Promise<any> {
     const path = `/resources/${type}/${name}.${extension}`;
     return new Promise((resolve, reject) => {
-      $.get(path, (data: T) => {
+      if (type === 'templates' && this.templateRegistry[name]) {
+        return resolve(this.templateRegistry[name]);
+      }
+      if (type === 'content' && this.contentRegistry[name]) {
+        return resolve(this.contentRegistry[name]);
+      }
+      $.get(path, (data: any) => {
         resolve(data);
       });
     });
   }
 
   public template(name: string): Promise<HandlebarsTemplateDelegate> {
-    return this.get<HandlebarsTemplateDelegate>(name, 'templates', 'hbs')
+    return this.get(name, 'templates', 'hbs')
       .then((template) => {
+        if (!this.templateRegistry[name]) {
+          this.templateRegistry[name];
+        }
         return Handlebars.compile(template);
       });
   }
 
   public content(name: string): Promise<IContent> {
-    return this.get<IContent>(name, 'content', 'json');
+    return this.get(name, 'content', 'json');
   }
 }
 

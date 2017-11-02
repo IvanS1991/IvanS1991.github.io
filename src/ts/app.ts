@@ -3,6 +3,7 @@ import { emitter } from './page-events';
 
 nav.init({
   nav: 'nav',
+  container: 'nav__container',
   mobile: 'nav__mobile',
   button: 'nav__button'
 });
