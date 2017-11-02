@@ -5,16 +5,24 @@ $nav__button-background_active: lightgreen;
 $nav__button-background_hover: brown;
 
 .nav {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  list-style: none;
-  @media (max-width: $screen-medium) {
-    display: block;
-    margin-top: 0;
+  &__container {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    
+    @media (max-width: $screen-medium) {
+      display: none;
+      margin-top: 0;
+    }
+
+    &__is-expanded {
+      display: block;
+    }
   }
+
   &__item {
     width: 25%;
     @media (max-width: $screen-medium) {
@@ -24,6 +32,17 @@ $nav__button-background_hover: brown;
 
   &__button {
     display: block;
+  }
+
+  &__mobile {
+    background-color: lightgreen;
+    display: none;
+    @media (max-width: $screen-medium) {
+      display: block;
+    }
+  }
+
+  &__button, &__mobile {
     width: 100%;
     padding: $nav__button-padding;
     color: black;

@@ -1,8 +1,12 @@
 import Handlebars from 'handlebars';
 
+interface IContentElement {
+  [key: string]: string;
+}
+
 interface IContent {
-  en: object;
-  bg?: object;
+  en: IContentElement;
+  bg?: IContentElement;
 }
 
 interface ITemplateRegistry {
@@ -32,14 +36,14 @@ class Fetch {
   }
 
   public template(name: string): Promise<HandlebarsTemplateDelegate> {
-    return this.get<HandlebarsTemplateDelegate>(name, 'templates', '.hbs')
+    return this.get<HandlebarsTemplateDelegate>(name, 'templates', 'hbs')
       .then((template) => {
         return Handlebars.compile(template);
       });
   }
 
   public content(name: string): Promise<IContent> {
-    return this.get<IContent>(name, 'content', '.json');
+    return this.get<IContent>(name, 'content', 'json');
   }
 }
 

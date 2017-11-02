@@ -1,1 +1,39 @@
-System.register(["handlebars"],function(t,e){"use strict";var n,r;e&&e.id;return{setters:[function(t){n=t}],execute:function(){r=function(){function t(){this.templateRegistry={},this.contentRegistry={}}return t.prototype.get=function(t,e,n){var r="/resources/"+e+"/"+t+"."+n;return new Promise(function(t,e){$.get(r,function(e){t(e)})})},t.prototype.template=function(t){return this.get(t,"templates",".hbs").then(function(t){return n.default.compile(t)})},t.prototype.content=function(t){return this.get(t,"content",".json")},t}(),t("Fetch",r)}}});
+System.register(["handlebars"], function (exports_1, context_1) {
+    "use strict";
+    var __moduleName = context_1 && context_1.id;
+    var handlebars_1, Fetch;
+    return {
+        setters: [
+            function (handlebars_1_1) {
+                handlebars_1 = handlebars_1_1;
+            }
+        ],
+        execute: function () {
+            Fetch = /** @class */ (function () {
+                function Fetch() {
+                    this.templateRegistry = {};
+                    this.contentRegistry = {};
+                }
+                Fetch.prototype.get = function (name, type, extension) {
+                    var path = "/resources/" + type + "/" + name + "." + extension;
+                    return new Promise(function (resolve, reject) {
+                        $.get(path, function (data) {
+                            resolve(data);
+                        });
+                    });
+                };
+                Fetch.prototype.template = function (name) {
+                    return this.get(name, 'templates', 'hbs')
+                        .then(function (template) {
+                        return handlebars_1.default.compile(template);
+                    });
+                };
+                Fetch.prototype.content = function (name) {
+                    return this.get(name, 'content', 'json');
+                };
+                return Fetch;
+            }());
+            exports_1("Fetch", Fetch);
+        }
+    };
+});
