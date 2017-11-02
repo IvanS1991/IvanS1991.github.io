@@ -9,11 +9,17 @@
 }
 
 .content {
-  padding: 2em 1em;
-  height: 81%;
+  padding: 1em 1em;
+  height: 88%;
+  @media (max-width: $screen-medium) {
+    padding: 1em 0;
+  }
 }
 
 .footer {
-  background-color: lightgreen;
-  padding: 2em 1em;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: lightblue;
 }

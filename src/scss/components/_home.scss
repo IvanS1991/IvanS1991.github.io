@@ -1,0 +1,42 @@
+.home-container {
+  display: flex;
+  padding: 2em;
+  @media (max-width: $screen-medium) {
+    flex-direction: column;
+  }
+}
+
+.image-container {
+  &__image {
+    width: 20em;
+    @media (max-width: $screen-medium) {
+      width: 80%;
+    }
+  }
+}
+
+.info-container {
+  padding: 5em;
+  @media (max-width: $screen-medium) {
+    padding: 1em;
+  }
+  &__brief-intro {
+    text-align: left;
+    line-height: 250%;
+  }
+}
+
+.perks {
+  display: flex;
+  justify-content: space-around;
+  padding: 3em 1em;
+  &__item {
+    width: 30%;
+    &__symbol {
+      height: 5em;
+      @media (max-width: $screen-medium) {
+        height: 2em;
+      }
+    }
+  }
+}
