@@ -22,7 +22,8 @@ h1 {
 
 .content {
   padding: 1em 1em;
-  height: 88%; }
+  height: 88%;
+  overflow: scroll; }
   @media (max-width: 800px) {
     .content {
       padding: 1em 0; } }
@@ -33,6 +34,40 @@ h1 {
   left: 0;
   width: 100%;
   background-color: lightblue; }
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  .skills-list__skill {
+    border-top: 1px solid grey; }
+
+.technology__score {
+  margin: 0.5em auto;
+  padding: 0.5em 0; }
+  .technology__score > span {
+    float: left; }
+  .technology__score-30 {
+    background-color: lightcoral;
+    width: 30%; }
+  .technology__score-40 {
+    background-color: #f0b280;
+    width: 40%; }
+  .technology__score-50 {
+    background-color: #f0e580;
+    width: 50%; }
+  .technology__score-60 {
+    background-color: #dbf080;
+    width: 60%; }
+  .technology__score-70 {
+    background-color: #a9f080;
+    width: 70%; }
+  .technology__score-80 {
+    background-color: #80f0ab;
+    width: 80%; }
+  .technology__score-90 {
+    background-color: #80f0e7;
+    width: 90%; }
 
 @media (max-width: 800px) {
   .nav {

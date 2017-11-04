@@ -1,4 +1,103 @@
 {
   "en": {
+    "info": {
+    },
+    "skills": [
+      {
+        "label": "Languages and supersets",
+        "technologies": [
+          {
+            "name": "JavaScript",
+            "score": "80",
+            "summary": "Good understanding of fundamentals, OOP (classic and prototypal inheritance), basic design patterns."
+          },
+          {
+            "name": "ES6",
+            "score": "80",
+            "summary": "Good understanding of the most used aspects of it, such as Promises, arrow functions, destructuring assignments and much more."
+          },
+          {
+            "name": "TypeScript",
+            "score": "70",
+            "summary": "Good understanding of the positives it brings on the table."
+          },
+          {
+            "name": "HTML",
+            "score": "60",
+            "summary": "Good understanding of the basic structure, the basic tags and most of their attributes and properties. Slightly lacking in terms of semantics."
+          },
+          {
+            "name": "CSS",
+            "score": "70",
+            "summary": "Good understanding of the normal flow, the basic layouts, the difference between inline and block, slightly lacking in terms of browser support for the various vendors."
+          },
+          {
+            "name": "Python",
+            "score": "30",
+            "summary": "Very basic understanding with very limited experience."
+          }
+        ]
+      },
+      {
+        "label": "Front-end",
+        "technologies": [
+          {
+            "name": "jQuery",
+            "score": "70",
+            "summary": "Good knowledge of jQuery DOM manipulations, AJAX, effects."
+          },
+          {
+            "name": "Bootstrap",
+            "score": "70",
+            "summary": "Good understanding of the bootstrap grid."
+          },
+          {
+            "name": "Angular 2/4",
+            "score": "70",
+            "summary": "Good knowledge of the basic building blocks, the dependency injection, the decorators and the metadata they are using, slightly lacking in terms of experience (this will probably change in the near future)."
+          }
+        ]
+      },
+      {
+        "label": "Back-end",
+        "technologies": [
+          {
+            "name": "Node.JS",
+            "score": "60",
+            "summary": "Good understanding of its modular and asynchronous nature, slightly lacking in terms of built-in modules knowledge."
+          },
+          {
+            "name": "ExpressJS",
+            "score": "80",
+            "summary": "Good understanding of the way it works, the concept of its middlewares, the routing and the error handling it offers."
+          },
+          {
+            "name": "MongoDB",
+            "score": "60",
+            "summary": "Good understanding on how to use it for something small."
+          }
+        ]
+      },
+      {
+        "label": "Other",
+        "technologies": [
+          {
+            "name": "Coding style",
+            "score": "80",
+            "summary": "I am always using good practices, defined by ESLint, TSLint, although I am still not used to CSSLint."
+          },
+          {
+            "name": "Git / GitHub",
+            "score": "70",
+            "summary": "Good knowledge of how to use them, both in GUI and CLI, good understanding of the concept of Git Flow and decent understanding in using it."
+          },
+          {
+            "name": "Algorithms and data structures",
+            "score": "30",
+            "summary": "Very basic understanding, but I am somewhat good at math so this might change."
+          }
+        ]
+      }
+    ]
   }
 }

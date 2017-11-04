@@ -1,2 +1,16 @@
 <h1>About</h1>
-<h2>TODO</h2>
+<h2>Skills:</h2>
+<ul class="skills-list">
+  {{#each this.en.skills}}
+    <li class="skills-list__skill">
+      <h3>{{this.label}}</h3>
+      <ul class="skills-list">
+        {{#each this.technologies}}
+          <div class="skills-list__technology">
+            <p class="technology__score technology__score-{{this.score}}" title="{{this.summary}}"><span>{{this.score}}</span>{{this.name}}</p>
+          </div>
+        {{/each}}
+      </ul>
+    </li>
+  {{/each}}
+</ul>

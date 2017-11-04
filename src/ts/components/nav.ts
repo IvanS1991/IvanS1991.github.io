@@ -11,7 +11,7 @@ const init = (selectors): void => {
   $nav.on('click', (event): void => {
     event.preventDefault();
     const $this: JQuery = $(event.target);
-    const currentPage = $this.html().toLowerCase();
+    const currentPage = $this.attr('data-page');
     if ($this.hasClass(selectors.button)) {
       $buttons.removeClass(classActive);
       $this.addClass(classActive);
