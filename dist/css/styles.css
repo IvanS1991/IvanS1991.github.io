@@ -11,6 +11,20 @@ h1 {
   border-bottom: 1px solid grey;
   padding: 1em; }
 
+.success, .error {
+  display: none;
+  padding: 0.5em 1em;
+  font-size: 200%;
+  font-weight: 800; }
+  .success__is-visible, .error__is-visible {
+    display: inline-block; }
+
+.success {
+  background-color: lightgreen; }
+
+.error {
+  background-color: lightcoral; }
+
 .main-wrapper {
   display: flex;
   flex-direction: column;
@@ -22,7 +36,8 @@ h1 {
 
 .content {
   padding: 1em 1em;
-  height: 88%; }
+  height: 88%;
+  overflow: scroll; }
   @media (max-width: 800px) {
     .content {
       padding: 1em 0; } }
@@ -33,6 +48,41 @@ h1 {
   left: 0;
   width: 100%;
   background-color: lightblue; }
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  .skills-list__skill {
+    border-top: 1px solid grey; }
+
+.technology__score {
+  margin: 0.5em auto;
+  padding: 0.5em 1em; }
+  .technology__score > span {
+    float: left;
+    font-size: 130%; }
+  .technology__score-30 {
+    background-color: lightcoral;
+    width: 30%; }
+  .technology__score-40 {
+    background-color: #f0b280;
+    width: 40%; }
+  .technology__score-50 {
+    background-color: #f0e580;
+    width: 50%; }
+  .technology__score-60 {
+    background-color: #dbf080;
+    width: 60%; }
+  .technology__score-70 {
+    background-color: #a9f080;
+    width: 70%; }
+  .technology__score-80 {
+    background-color: #80f0ab;
+    width: 80%; }
+  .technology__score-90 {
+    background-color: #80f0e7;
+    width: 90%; }
 
 @media (max-width: 800px) {
   .nav {
@@ -48,13 +98,14 @@ h1 {
   margin: 0;
   flex-wrap: wrap;
   justify-content: space-between;
-  list-style: none; }
+  list-style: none;
+  transition: opacity 200ms; }
   @media (max-width: 800px) {
     .nav__container {
-      display: none;
+      opacity: 0;
       margin-top: 0; } }
   .nav__container__is-expanded {
-    display: block; }
+    opacity: 1; }
 
 .nav__item {
   width: 25%; }
@@ -139,9 +190,17 @@ h1 {
     @media (max-width: 800px) {
       .form__input, .form__textarea, .form__button {
         width: 100%; } }
+  .form__button {
+    cursor: pointer; }
   .form__textarea {
     height: 10em;
     resize: none; }
+
+.content {
+  opacity: 1;
+  transition: opacity 200ms; }
+  .content__is-faded-out {
+    opacity: 0; }
 
 .project-card-list {
   display: flex;
@@ -161,6 +220,7 @@ h1 {
       width: 100%; } }
   .project-card__link {
     color: black;
-    text-decoration: none; }
+    text-decoration: none;
+    transition: color 200ms; }
     .project-card__link:hover {
       color: brown; }
