@@ -13,10 +13,10 @@ const init = (selectors): void => {
     const $this: JQuery = $(event.target);
     const currentPage = $this.html().toLowerCase();
     if ($this.hasClass(selectors.button)) {
+      emitter.emit('page-change', currentPage);
       $buttons.removeClass(classActive);
       $this.addClass(classActive);
       $navContainer.removeClass(classExpanded);
-      emitter.emit('page-change', currentPage);
       sessionStorage.setItem('currentPage', currentPage);
     }
   });

@@ -143,6 +143,12 @@ h1 {
     height: 10em;
     resize: none; }
 
+.content {
+  opacity: 1;
+  transition: opacity 200ms; }
+  .content__is-faded-out {
+    opacity: 0; }
+
 .project-card-list {
   display: flex;
   flex-wrap: wrap;
@@ -161,6 +167,7 @@ h1 {
       width: 100%; } }
   .project-card__link {
     color: black;
-    text-decoration: none; }
+    text-decoration: none;
+    transition: color 200ms; }
     .project-card__link:hover {
       color: brown; }
