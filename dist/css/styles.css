@@ -44,9 +44,10 @@ h1 {
 
 .technology__score {
   margin: 0.5em auto;
-  padding: 0.5em 0; }
+  padding: 0.5em 1em; }
   .technology__score > span {
-    float: left; }
+    float: left;
+    font-size: 130%; }
   .technology__score-30 {
     background-color: lightcoral;
     width: 30%; }

@@ -14,9 +14,10 @@
 
 .technology__score {
   margin: 0.5em auto;
-  padding: 0.5em 0;
+  padding: 0.5em 1em;
   & > span {
     float: left;
+    font-size: 130%;
   }
   &-30 {
     @include score-box(30%, lightcoral);
