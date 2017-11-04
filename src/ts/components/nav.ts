@@ -13,10 +13,10 @@ const init = (selectors): void => {
     const $this: JQuery = $(event.target);
     const currentPage = $this.attr('data-page');
     if ($this.hasClass(selectors.button)) {
+      emitter.emit('page-change', currentPage);
       $buttons.removeClass(classActive);
       $this.addClass(classActive);
-      $navContainer.removeClass(classExpanded);
-      emitter.emit('page-change', currentPage);
+      $navContainer.toggleClass(classExpanded);
       sessionStorage.setItem('currentPage', currentPage);
     }
   });
@@ -24,7 +24,8 @@ const init = (selectors): void => {
   $mobileTrigger.on('click', $mobileTrigger, (event): void => {
     event.preventDefault();
     const $this: JQuery = $(event.target);
-    $this.next().addClass(classExpanded);
+    const $navContainer = $this.next();
+    $navContainer.toggleClass(classExpanded);
   });
 };
 

@@ -1,3 +1,7 @@
 .content {
-  background-color: rgb(236, 236, 236);
+  opacity: 1;
+  transition: opacity $transition-delay;
+  &__is-faded-out {
+    opacity: 0;
+  }
 }
