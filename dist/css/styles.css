@@ -141,6 +141,9 @@ h1 {
   .nav__button_active, .nav__mobile_active {
     background-color: white;
     border-bottom: 1px solid white; }
+    @media (max-width: 800px) {
+      .nav__button_active, .nav__mobile_active {
+        border: 1px solid #adadad; } }
   .nav__button:hover, .nav__mobile:hover {
     color: lightgreen;
     background-color: brown; }

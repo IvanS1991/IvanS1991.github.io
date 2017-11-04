@@ -16,7 +16,7 @@ const init = (selectors): void => {
       emitter.emit('page-change', currentPage);
       $buttons.removeClass(classActive);
       $this.addClass(classActive);
-      $navContainer.toggleClass(classExpanded);
+      $navContainer.removeClass(classExpanded);
       sessionStorage.setItem('currentPage', currentPage);
     }
   });

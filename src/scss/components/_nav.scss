@@ -74,6 +74,9 @@ $nav__button-background_hover: brown;
     &_active {
       background-color: $nav__button-background_active;
       border-bottom: 1px solid white;
+      @media (max-width: $screen-medium) {
+        border: $nav__button-border;
+      }
     }
     &:hover {
       color: $nav__button-color_hover;
