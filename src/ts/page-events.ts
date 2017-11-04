@@ -1,5 +1,6 @@
 import { MyEventEmitter } from './utils/event-emitter';
 import { Fetch } from './utils/fetch';
+import * as emailForm from './components/email-form';
 
 const emitter = new MyEventEmitter();
 const fetch = new Fetch();
@@ -16,6 +17,11 @@ emitter.on('page-change', (page) => {
     })
     .then((output) => {
       $context.html(template(output));
+    })
+    .then(() => {
+      if (page === 'contacts') {
+        emailForm.init();
+      }
     });
 });
 
