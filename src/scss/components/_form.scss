@@ -13,6 +13,10 @@
     }
   }
 
+  &__button {
+    cursor: pointer;
+  }
+
   &__textarea {
     height: 10em;
     resize: none;

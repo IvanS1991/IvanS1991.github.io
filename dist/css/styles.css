@@ -11,6 +11,20 @@ h1 {
   border-bottom: 1px solid grey;
   padding: 1em; }
 
+.success, .error {
+  display: none;
+  padding: 0.5em 1em;
+  font-size: 200%;
+  font-weight: 800; }
+  .success__is-visible, .error__is-visible {
+    display: inline-block; }
+
+.success {
+  background-color: lightgreen; }
+
+.error {
+  background-color: lightcoral; }
+
 .main-wrapper {
   display: flex;
   flex-direction: column;
@@ -175,9 +189,14 @@ h1 {
     @media (max-width: 800px) {
       .form__input, .form__textarea, .form__button {
         width: 100%; } }
+  .form__button {
+    cursor: pointer; }
   .form__textarea {
     height: 10em;
     resize: none; }
+
+.content {
+  background-color: #ececec; }
 
 .project-card-list {
   display: flex;

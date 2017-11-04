@@ -1,0 +1,19 @@
+.success, .error {
+  display: none;
+  padding: 0.5em 1em;
+  font: {
+    size: 200%;
+    weight: 800;
+  }
+  &__is-visible {
+    display: inline-block;
+  }
+}
+
+.success {
+  background-color: lightgreen;
+}
+
+.error {
+  background-color: lightcoral;
+}
