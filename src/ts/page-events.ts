@@ -36,10 +36,6 @@ emitter.on('page-change', (page) => {
       if (page === 'contacts') {
         emailForm.init();
       }
-      if (page === 'about') {
-        about.init();
-      }
-      return wait(200);
     })
     .then(() => {
       $context.removeClass(classFadedOut);
