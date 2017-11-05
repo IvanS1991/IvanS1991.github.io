@@ -124,9 +124,15 @@
             "summary": "Good knowledge of how to use them, both in GUI and CLI, good understanding of the concept of Git Flow and decent experience with it."
           },
           {
+            "name": "Task runners",
+            "score": 60,
+            "excellence": false,
+            "summary": "Good understanding of task runners in general (Gulp in particular)."
+          },
+          {
             "name": "Testing frameworks",
             "score": 50,
-            "excellence": "false",
+            "excellence": false,
             "summary": "Decent knowledge of unit testing frameworks (Mocha, Chai, Sinon), basic understanding of integration and browser tests, including some experience with Selenium Webdriver"
           },
           {
