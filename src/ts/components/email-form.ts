@@ -1,8 +1,12 @@
 const init = () => {
   const $emailForm = $('#email-form');
 
-  $emailForm.on('submit', (e) => {
-    e.preventDefault();
+  $emailForm.on('submit', (event) => {
+    event.preventDefault();
+    const $this = $(event.target);
+    const $loading = $this.next();
+    $this.addClass('hidden');
+    $loading.removeClass('hidden');
     return new Promise((resolve, reject) => {
         $.ajax({
           url: "https://formspree.io/haifischy91@gmail.com", 
@@ -18,7 +22,7 @@ const init = () => {
         });
       })
       .then(() => {
-        return $emailForm.toggle();
+        $loading.addClass('hidden');
       })
       .then((response) => {
         $('.success').addClass('success__is-visible');

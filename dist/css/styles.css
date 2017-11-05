@@ -25,6 +25,12 @@ h1 {
 .error {
   background-color: lightcoral; }
 
+.hidden {
+  display: none; }
+
+.loading {
+  width: 20%; }
+
 .main-wrapper {
   display: flex;
   flex-direction: column;
