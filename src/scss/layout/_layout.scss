@@ -10,8 +10,10 @@
 
 .content {
   height: 88%;
+  overflow: auto;
+  padding: 0 0.5em;
   @media (max-width: $screen-medium) {
-    padding: 1em 0;
+    padding: 1em 0.5em;
   }
 }
 
