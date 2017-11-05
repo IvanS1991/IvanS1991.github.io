@@ -31,6 +31,7 @@ gulp.task('compile:scss', ['clean:css'], () => {
   return gulp.src(`src/scss/**/*.scss`)
     .pipe(sass().on('error', sass.logError))
     .pipe(concat('styles.css'))
+    .pipe(cleanCss({ compatibility: 'ie8' }))
     .pipe(gulp.dest('dist/css'));
 });
 
