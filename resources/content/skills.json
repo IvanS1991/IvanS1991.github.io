@@ -16,7 +16,7 @@
             "name": "ES6",
             "score": 80,
             "excellence": true,
-            "summary": "Good understanding of the most used aspects of it, such as Promises, arrow functions, destructuring assignments and much more."
+            "summary": "Good understanding of the most useful aspects of it, such as Promises, arrow functions, destructuring assignments and much more."
           },
           {
             "name": "TypeScript",
@@ -28,13 +28,13 @@
             "name": "HTML",
             "score": 60,
             "excellence": false,
-            "summary": "Good understanding of the basic structure, the basic tags and most of their attributes and properties. Slightly lacking in terms of semantics."
+            "summary": "Good understanding of the basic structure, the basic tags and most of their attributes and properties. Slightly lacking experience in writing semantic HTML."
           },
           {
             "name": "CSS",
             "score": 70,
             "excellence": true,
-            "summary": "Good understanding of the normal flow, the basic layouts, the difference between inline and block, slightly lacking in terms of browser support for the various vendors."
+            "summary": "Good understanding of the normal flow, the basic layouts, the difference between inline and block, slightly lacking knowledge of browser support for the various vendors."
           },
           {
             "name": "Python",
@@ -51,7 +51,7 @@
             "name": "jQuery",
             "score": 70,
             "excellence": true,
-            "summary": "Good knowledge of jQuery DOM manipulations, AJAX, effects."
+            "summary": "Good understanding of jQuery DOM manipulations, AJAX, effects."
           },
           {
             "name": "Bootstrap",
@@ -63,13 +63,13 @@
             "name": "Angular 2/4",
             "score": 70,
             "excellence": true,
-            "summary": "Good knowledge of the basic building blocks, the dependency injection, the decorators and the metadata they are using, slightly lacking in terms of experience (this will probably change in the near future)."
+            "summary": "Good understanding of the basic building blocks, the dependency injection, the decorators and the metadata they are using, slightly lacking in terms of experience (this will probably change in the near future)."
           },
           {
             "name": "Responsive design",
             "score": 80,
             "excellence": true,
-            "summary": "Very good understanding of media queries, very good feeling for responsive UX."
+            "summary": "Very good understanding of media queries, very good feeling for responsive UI."
           },
           {
             "name": "AJAX",
@@ -86,7 +86,7 @@
             "name": "Node.JS",
             "score": 60,
             "excellence": false,
-            "summary": "Good understanding of its modular and asynchronous nature, slightly lacking in terms of built-in modules knowledge."
+            "summary": "Good understanding of its modular and asynchronous nature."
           },
           {
             "name": "ExpressJS",
@@ -115,13 +115,13 @@
             "name": "Coding style",
             "score": 80,
             "excellence": true,
-            "summary": "I am always using good practices, defined by ESLint, TSLint, although I am still not used to CSSLint."
+            "summary": "Striving to follow good practices mostly, using ESLint/TSLint for style guidelines."
           },
           {
             "name": "Git / GitHub",
             "score": 70,
             "excellence": true,
-            "summary": "Good knowledge of how to use them, both in GUI and CLI, good understanding of the concept of Git Flow and decent understanding in using it."
+            "summary": "Good knowledge of how to use them, both in GUI and CLI, good understanding of the concept of Git Flow and decent experience with it."
           },
           {
             "name": "Testing frameworks",
@@ -133,7 +133,7 @@
             "name": "Algorithms and data structures",
             "score": 30,
             "excellence": false,
-            "summary": "Very basic understanding, but I am somewhat good at math so this might change."
+            "summary": "Very basic understanding, but I am somewhat good at math so this might change very fast."
           }
         ]
       }

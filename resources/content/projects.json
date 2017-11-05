@@ -4,38 +4,38 @@
       {
         "url": "https://github.com/IvanS1991/blog-frontend-course-project",
         "name": "blog-frontend-course-project",
-        "description": "Course project for TA's Web Front-End course",
-        "mainLanguage": "JavaScript"
+        "description": "Single page app, blog, sliced from a PSD, using various libraries for the frontend, and a simple Express RESTful API.",
+        "mainLanguage": "JavaScript / Node.js"
       },
       {
         "url": "https://github.com/IvanS1991/angular-course-project",
         "name": "angular-course-project",
-        "description": "Course project for TA's Web apps with Angular 2 course",
-        "mainLanguage": "TypeScript"
+        "description": "Single page app, forum, using Angular 4 on the frontend, and a simple Express RESTful API for the backend.",
+        "mainLanguage": "TypeScript / Node.js"
       },
       {
         "url": "https://github.com/IvanS1991/nodejs-course-project",
         "name": "nodejs-course-project",
-        "description": "Course project for TA's Web Front-End course",
-        "mainLanguage": "JavaScript"
+        "description": "Standard web app, movie library, using Express on the backend and serverside rendering of Pug templates",
+        "mainLanguage": "JavaScript / Node.js"
       },
       {
         "url": "https://github.com/IvanS1991/soccerway-scraper",
         "name": "soccerway-scraper",
         "description": "Football stats scraper for soccerway.com",
-        "mainLanguage": "JavaScript"
+        "mainLanguage": "JavaScript / Node.js"
+      },
+      {
+        "url": "https://github.com/IvanS1991/imdb-data-scraper",
+        "name": "imdb-data-scraper",
+        "description": "Movie data scraper for imdb.com",
+        "mainLanguage": "JavaScript / Node.js"
       },
       {
         "url": "https://github.com/IvanS1991/art-1",
         "name": "art-1",
         "description": "Old website project",
-        "mainLanguage": "CSS"
-      },
-      {
-        "url": "https://github.com/IvanS1991/imdb-data-scraper",
-        "name": "imdb-data-scraper",
-        "description": "Course project for TA's Web Front-End course",
-        "mainLanguage": "JavaScript"
+        "mainLanguage": "CSS / JavaScript / HTML"
       }
     ]
   }
