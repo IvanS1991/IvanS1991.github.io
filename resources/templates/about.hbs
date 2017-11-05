@@ -6,8 +6,18 @@
       <h3>{{this.label}}</h3>
       <ul class="skills-list">
         {{#each this.technologies}}
-          <div class="skills-list__technology">
-            <p class="technology__score technology__score-{{this.score}}" title="{{this.summary}}"><span>{{this.score}}</span>{{this.name}}</p>
+          <div class="skills-list__technology score-{{this.score}}">
+            <a href="#" class="technology__expand">
+              <p class="technology__score" title="{{this.summary}}">
+                <span>
+                {{#if this.excellence}}
+                <img src="/resources/img/excellence.svg">
+                {{/if}}
+                {{this.score}}</span>
+                {{this.name}}
+              </p>
+            </a>
+            <p class="technology__summary hidden">{{this.summary}}</p>
           </div>
         {{/each}}
       </ul>
