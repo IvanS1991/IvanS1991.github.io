@@ -1,6 +1,5 @@
 .home-container {
   display: flex;
-  padding: 2em;
   @media (max-width: $screen-medium) {
     flex-direction: column;
   }

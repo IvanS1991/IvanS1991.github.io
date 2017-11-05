@@ -3,13 +3,16 @@ body {
   font-size: 16px;
   font-family: sans-serif;
   text-align: center; }
+  @media (min-width: 1440px) {
+    body {
+      font-size: 17.6px; } }
   @media (min-width: 2000px) {
     body {
       font-size: 32px; } }
 
 h1 {
   border-bottom: 1px solid grey;
-  padding: 1em; }
+  padding: 0.5em; }
 
 .success, .error {
   display: none;
@@ -41,7 +44,6 @@ h1 {
   width: 100%; }
 
 .content {
-  padding: 1em 1em;
   height: 88%;
   overflow: scroll; }
   @media (max-width: 800px) {
@@ -155,8 +157,7 @@ h1 {
     background-color: brown; }
 
 .home-container {
-  display: flex;
-  padding: 2em; }
+  display: flex; }
   @media (max-width: 800px) {
     .home-container {
       flex-direction: column; } }
