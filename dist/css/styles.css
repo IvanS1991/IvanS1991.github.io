@@ -1,18 +1,6 @@
-body {
-  box-sizing: border-box;
-  font-size: 16px;
-  font-family: sans-serif;
-  text-align: center; }
-  @media (min-width: 1440px) {
-    body {
-      font-size: 17.6px; } }
-  @media (min-width: 2000px) {
-    body {
-      font-size: 32px; } }
-
-h1 {
-  border-bottom: 1px solid grey;
-  padding: 0.5em; }
+@font-face {
+  font-family: "Rocko";
+  src: url("/resources/fonts/RockoFLF.ttf"); }
 
 .success, .error {
   display: none;
@@ -33,6 +21,30 @@ h1 {
 
 .loading {
   width: 20%; }
+
+.excellence {
+  background-image: url("/resources/img/excellence.svg");
+  background-repeat: no-repeat; }
+
+body {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Rocko", sans-serif;
+  letter-spacing: 2px;
+  text-align: center; }
+  @media (min-width: 1440px) {
+    body {
+      font-size: 17.6px; } }
+  @media (min-width: 2000px) {
+    body {
+      font-size: 32px; } }
+
+h1 {
+  border-bottom: 1px solid grey;
+  padding: 0.5em; }
+
+p {
+  text-indent: 1em; }
 
 .main-wrapper {
   display: flex;
@@ -60,26 +72,26 @@ h1 {
 .skills-list {
   list-style: none;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  text-align: left; }
   .skills-list__skill {
-    border-top: 1px solid grey; }
+    border-bottom: 1px solid grey; }
   .skills-list__technology {
     margin: 0.5em auto;
-    padding: 0.1em; }
+    padding: 0.5em; }
 
 .technology__score {
-  position: relative;
-  font-size: 110%; }
-  .technology__score > span {
-    position: absolute;
-    top: -0.5em;
-    left: 0;
-    font-weight: 900; }
-
-.technology__expand {
-  color: black;
+  display: flex;
+  flex-wrap: wrap;
   font-size: 110%;
-  text-decoration: none; }
+  margin: 0; }
+  .technology__score > span {
+    padding: 0 1em;
+    margin-right: 1em;
+    border-right: 1px solid grey; }
+    @media (max-width: 800px) {
+      .technology__score > span {
+        padding: 0 0.3em; } }
 
 .technology__summary {
   border-top: 1px solid grey;
@@ -87,27 +99,27 @@ h1 {
 
 .score-30 {
   background-color: lightcoral;
-  width: 30%; }
+  width: 60%; }
 
 .score-40 {
   background-color: #f0b280;
-  width: 40%; }
+  width: 65%; }
 
 .score-50 {
   background-color: #f0e580;
-  width: 50%; }
+  width: 70%; }
 
 .score-60 {
   background-color: #dbf080;
-  width: 60%; }
+  width: 75%; }
 
 .score-70 {
   background-color: #a9f080;
-  width: 70%; }
+  width: 80%; }
 
 .score-80 {
   background-color: #80f0ab;
-  width: 80%; }
+  width: 85%; }
 
 .score-90 {
   background-color: #80f0e7;
