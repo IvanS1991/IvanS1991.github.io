@@ -1,10 +1,11 @@
 @import 'global-variables';
-@import 'config';
+@import 'fonts';
 @import 'utils';
+@import 'config';
 
 @import 'layout/layout';
 
-@import 'components/about';
+@import 'components/skills';
 @import 'components/nav';
 @import 'components/home';
 @import 'components/form';

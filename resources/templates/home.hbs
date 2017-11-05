@@ -7,15 +7,18 @@
     </div>
     <div class="info-container">
       <p class="info-container__brief-intro">{{this.briefIntro}}</p>
-      <a href="#" class="nav__button" data-page="about">More info...</a>
+      <a href="https://my.telerikacademy.com/Certificates/Image/2354/0bae21fb" class="nav__button" target="tab">Telerik Front-end Certificate</a>
+      <p class="info-container__brief-intro">{{this.thisWebsite}}</p>
     </div>
   </div>
   <div class="perks">
     {{#each this.perks}}
       <div class="perks__item">
-        <h2 class="perks__item__name">{{this.name}}</h2>
+        <h4 class="perks__item__name">{{this.name}}</h4>
         <img src="{{this.symbol}}" class="perks__item__symbol">
+        {{#if this.summary}}
         <p class="perks__item__summary">{{this.summary}}</p>
+        {{/if}}
       </div>
     {{/each}}
   </div>

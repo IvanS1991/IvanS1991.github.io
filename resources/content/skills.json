@@ -48,12 +48,6 @@
         "label": "Front-end",
         "technologies": [
           {
-            "name": "Responsive design",
-            "score": 80,
-            "excellence": true,
-            "summary": "Very good understanding of media queries, very good feeling for responsive UX."
-          },
-          {
             "name": "jQuery",
             "score": 70,
             "excellence": true,
@@ -70,6 +64,18 @@
             "score": 70,
             "excellence": true,
             "summary": "Good knowledge of the basic building blocks, the dependency injection, the decorators and the metadata they are using, slightly lacking in terms of experience (this will probably change in the near future)."
+          },
+          {
+            "name": "Responsive design",
+            "score": 80,
+            "excellence": true,
+            "summary": "Very good understanding of media queries, very good feeling for responsive UX."
+          },
+          {
+            "name": "AJAX",
+            "score": 90,
+            "excellence": true,
+            "summary": "Very good understanding on asynchronous programming, higher order functions and Promises."
           }
         ]
       },
@@ -93,6 +99,12 @@
             "score": 60,
             "excellence": false,
             "summary": "Good understanding on how to use it for something small."
+          },
+          {
+            "name": "RESTful API",
+            "score": 70,
+            "excellence": true,
+            "summary": "Good understanding of RESTful APIs, able to create simple RESTful APIs with simple authentication methods"
           }
         ]
       },
@@ -110,6 +122,12 @@
             "score": 70,
             "excellence": true,
             "summary": "Good knowledge of how to use them, both in GUI and CLI, good understanding of the concept of Git Flow and decent understanding in using it."
+          },
+          {
+            "name": "Testing frameworks",
+            "score": 50,
+            "excellence": "false",
+            "summary": "Decent knowledge of unit testing frameworks (Mocha, Chai, Sinon), basic understanding of integration and browser tests, including some experience with Selenium Webdriver"
           },
           {
             "name": "Algorithms and data structures",

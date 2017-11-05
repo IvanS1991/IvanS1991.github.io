@@ -3,22 +3,23 @@
     "name": "Ivan Shtarbanov",
     "picture": "/resources/img/me.jpg",
     "job": "Front-end web developer",
-    "briefIntro": "Hello, my name is Ivan, I am 26 years old and I am aspiring to become a front-end web developer. I have experience with most major front-end technologies, but I've also worked with some back-end technologies as well. I excel in pure JavaScript, including the newest ECMAscript standards. Click the button below to find more about me and my skills.",
+    "briefIntro": "Hello, my name is Ivan, I am 26 years old and I am a certified front-end web developer. I have hands-on experience with many front-end, back-end and other technologies. I am striving to become a developer with good fundamentals and good coding style.",
+    "thisWebsite": "You can browse through projects I've worked on, and you can also see rough estimations of my experience / skill levels.",
     "perks": [
       {
         "symbol": "/resources/img/zoom.svg",
         "name": "Attention to detail",
-        "summary": "Dummy summary"
+        "summary": ""
       },
       {
         "symbol": "/resources/img/clock.svg",
         "name": "Meeting deadlines",
-        "summary": "Dummy summary"
+        "summary": ""
       },
       {
         "symbol": "/resources/img/smile.svg",
         "name": "Honesty",
-        "summary": "Dummy summary"
+        "summary": ""
       }
     ]
   }

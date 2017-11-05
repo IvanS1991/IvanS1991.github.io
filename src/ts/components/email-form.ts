@@ -9,7 +9,7 @@ const init = () => {
     $loading.removeClass('hidden');
     return new Promise((resolve, reject) => {
         $.ajax({
-          url: "https://formspree.io/haifischy91@gmail.com", 
+          url: "https://formspree.io/ivan.shtarbanov1991@gmail.com", 
           method: "POST",
           data: $emailForm.serialize(),
           dataType: 'json',
