@@ -6,6 +6,9 @@ body {
   font-size: $baseFontSize;
   font-family: $baseFontFamily;
   text-align: center;
+  @media (min-width: $screen-big) {
+    font-size: 1.1 * $baseFontSize;
+  }
   @media (min-width: $screen-xl) {
     font-size: 2 * $baseFontSize;
   }
@@ -13,5 +16,5 @@ body {
 
 h1 {
   border-bottom: 1px solid grey;
-  padding: 1em;
+  padding: 0.5em;
 }

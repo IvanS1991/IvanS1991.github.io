@@ -3,13 +3,16 @@ body {
   font-size: 16px;
   font-family: sans-serif;
   text-align: center; }
+  @media (min-width: 1440px) {
+    body {
+      font-size: 17.6px; } }
   @media (min-width: 2000px) {
     body {
       font-size: 32px; } }
 
 h1 {
   border-bottom: 1px solid grey;
-  padding: 1em; }
+  padding: 0.5em; }
 
 .success, .error {
   display: none;
@@ -25,6 +28,12 @@ h1 {
 .error {
   background-color: lightcoral; }
 
+.hidden {
+  display: none; }
+
+.loading {
+  width: 20%; }
+
 .main-wrapper {
   display: flex;
   flex-direction: column;
@@ -35,7 +44,6 @@ h1 {
   width: 100%; }
 
 .content {
-  padding: 1em 1em;
   height: 88%;
   overflow: scroll; }
   @media (max-width: 800px) {
@@ -55,34 +63,55 @@ h1 {
   margin: 0; }
   .skills-list__skill {
     border-top: 1px solid grey; }
+  .skills-list__technology {
+    margin: 0.5em auto;
+    padding: 0.1em; }
 
 .technology__score {
-  margin: 0.5em auto;
-  padding: 0.5em 1em; }
+  position: relative;
+  font-size: 110%; }
   .technology__score > span {
-    float: left;
-    font-size: 130%; }
-  .technology__score-30 {
-    background-color: lightcoral;
-    width: 30%; }
-  .technology__score-40 {
-    background-color: #f0b280;
-    width: 40%; }
-  .technology__score-50 {
-    background-color: #f0e580;
-    width: 50%; }
-  .technology__score-60 {
-    background-color: #dbf080;
-    width: 60%; }
-  .technology__score-70 {
-    background-color: #a9f080;
-    width: 70%; }
-  .technology__score-80 {
-    background-color: #80f0ab;
-    width: 80%; }
-  .technology__score-90 {
-    background-color: #80f0e7;
-    width: 90%; }
+    position: absolute;
+    top: -0.5em;
+    left: 0;
+    font-weight: 900; }
+
+.technology__expand {
+  color: black;
+  font-size: 110%;
+  text-decoration: none; }
+
+.technology__summary {
+  border-top: 1px solid grey;
+  padding: 0.5em; }
+
+.score-30 {
+  background-color: lightcoral;
+  width: 30%; }
+
+.score-40 {
+  background-color: #f0b280;
+  width: 40%; }
+
+.score-50 {
+  background-color: #f0e580;
+  width: 50%; }
+
+.score-60 {
+  background-color: #dbf080;
+  width: 60%; }
+
+.score-70 {
+  background-color: #a9f080;
+  width: 70%; }
+
+.score-80 {
+  background-color: #80f0ab;
+  width: 80%; }
+
+.score-90 {
+  background-color: #80f0e7;
+  width: 90%; }
 
 @media (max-width: 800px) {
   .nav {
@@ -149,8 +178,7 @@ h1 {
     background-color: brown; }
 
 .home-container {
-  display: flex;
-  padding: 2em; }
+  display: flex; }
   @media (max-width: 800px) {
     .home-container {
       flex-direction: column; } }

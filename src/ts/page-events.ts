@@ -1,6 +1,7 @@
 import { MyEventEmitter } from './utils/event-emitter';
 import { Fetch } from './utils/fetch';
 import * as emailForm from './components/email-form';
+import * as about from './components/about';
 
 const emitter: MyEventEmitter = new MyEventEmitter();
 const fetch: Fetch = new Fetch();
@@ -34,6 +35,9 @@ emitter.on('page-change', (page) => {
     .then(() => {
       if (page === 'contacts') {
         emailForm.init();
+      }
+      if (page === 'about') {
+        about.init();
       }
       return wait(200);
     })
