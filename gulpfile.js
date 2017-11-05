@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const tsc = require('gulp-typescript').createProject('tsconfig.json');
 const sass = require('gulp-sass');
+const cleanCss = require('gulp-clean-css');
 const clean = require('gulp-clean');
 const uglify = require('gulp-uglify');
 const concat = require('gulp-concat');
@@ -30,6 +31,7 @@ gulp.task('compile:scss', ['clean:css'], () => {
   return gulp.src(`src/scss/**/*.scss`)
     .pipe(sass().on('error', sass.logError))
     .pipe(concat('styles.css'))
+    .pipe(cleanCss({ compatibility: 'ie8' }))
     .pipe(gulp.dest('dist/css'));
 });
 
