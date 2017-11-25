@@ -5,6 +5,9 @@
     <a href="{{this.url}}" class="project-card__link"><h2>{{this.name}}</h2></a>
     <p class="project-card__description">{{this.description}}</p>
     <p class="project-card__main-language">{{this.mainLanguage}}</p>
+    {{#if this.deployed}}
+    <a href="{{this.deployed}}" class="project-card__deployed"><h2>Deployed</h2></a>
+    {{/if}}
   </div>
   {{/each}}
 </div>
