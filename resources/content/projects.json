@@ -5,13 +5,21 @@
         "url": "https://github.com/IvanS1991/blog-frontend-course-project",
         "name": "blog-frontend-course-project",
         "description": "Single page app, blog, sliced from a PSD, using various libraries for the frontend, and a simple Express RESTful API.",
-        "mainLanguage": "JavaScript / Node.js"
+        "mainLanguage": "JavaScript / Node.js",
+        "deployed": "https://blog-frontend-course-project.herokuapp.com/"
       },
       {
         "url": "https://github.com/IvanS1991/angular-course-project",
         "name": "angular-course-project",
         "description": "Single page app, forum, using Angular 4 on the frontend, and a simple Express RESTful API for the backend.",
         "mainLanguage": "TypeScript / Node.js"
+      },
+      {
+        "url": "https://github.com/IvanS1991/art-1",
+        "name": "rest-placeholder",
+        "description": "REST API with sandbox purpose",
+        "mainLanguage": "JavaScript / Node.js",
+        "deployed": "http://rest-placeholder.herokuapp.com/"
       },
       {
         "url": "https://github.com/IvanS1991/nodejs-course-project",
