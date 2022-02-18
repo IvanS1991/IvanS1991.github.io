@@ -1,10 +1,21 @@
 {
   "en": {
+    "title": "Home",
     "name": "Ivan Shtarbanov",
     "picture": "/resources/img/me.jpg",
     "job": "Front-end web developer",
-    "briefIntro": "Hello, my name is Ivan, I am 26 years old and I am a certified front-end web developer. I have hands-on experience with many front-end, back-end and other technologies. I am striving to become a developer with good fundamentals and good coding style.",
+    "briefIntro": "Hello, my name is Ivan, I am 30 years old and I am a certified web developer with 4 years of experience.",
     "thisWebsite": "You can browse through projects I've worked on, and you can also see rough estimations of my experience / skill levels.",
+    "certificates": [
+      {
+        "url": "https://my.telerikacademy.com/Certificates/Image/2354/0bae21fb",
+        "title": "Telerik Front-end Certificate"
+      },
+      {
+        "url": "https://softuni.bg/certificates/details/117880/cbb7910a",
+        "title": "SoftUni C# Developer Certificate"
+      }
+    ],
     "perks": [
       {
         "symbol": "/resources/img/zoom.svg",

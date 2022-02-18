@@ -1,13 +1,19 @@
-<h1>Home</h1>
+<h1>{{title}}</h1>
 {{#with this.en}}
   <div class="home-container">
     <div class="image-container">
-      <img src="{{this.picture}}" class="image-container__image"/>
+      <img src="{{this.picture}}" class="image-container__image" />
       <h2 class="info-container__name">{{this.name}}</h2>
     </div>
     <div class="info-container">
       <p class="info-container__brief-intro">{{this.briefIntro}}</p>
-      <a href="https://my.telerikacademy.com/Certificates/Image/2354/0bae21fb" class="nav__button" target="tab">Telerik Front-end Certificate</a>
+      {{#each this.certificates}}
+        <a
+          href="{{this.url}}"
+          class="nav__button"
+          target="tab"
+        >{{this.title}}</a>
+      {{/each}}
       <p class="info-container__brief-intro">{{this.thisWebsite}}</p>
     </div>
   </div>
@@ -15,9 +21,9 @@
     {{#each this.perks}}
       <div class="perks__item">
         <h4 class="perks__item__name">{{this.name}}</h4>
-        <img src="{{this.symbol}}" class="perks__item__symbol">
+        <img src="{{this.symbol}}" class="perks__item__symbol" />
         {{#if this.summary}}
-        <p class="perks__item__summary">{{this.summary}}</p>
+          <p class="perks__item__summary">{{this.summary}}</p>
         {{/if}}
       </div>
     {{/each}}

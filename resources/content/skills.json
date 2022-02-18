@@ -1,46 +1,51 @@
 {
   "en": {
-    "info": {
-    },
+    "info": {},
     "skills": [
       {
         "label": "Languages and supersets",
         "technologies": [
           {
             "name": "JavaScript",
-            "score": 80,
+            "score": 100,
             "excellence": true,
-            "summary": "Good understanding of fundamentals, OOP (classic and prototypal inheritance), basic design patterns."
-          },
-          {
-            "name": "ES6",
-            "score": 80,
-            "excellence": true,
-            "summary": "Good understanding of the most useful aspects of it, such as Promises, arrow functions, destructuring assignments and much more."
+            "summary": "Solid experience with the newest ES standards."
           },
           {
             "name": "TypeScript",
-            "score": 70,
-            "excellence": false,
-            "summary": "Good understanding of the positives it brings on the table."
+            "score": 100,
+            "excellence": true,
+            "summary": "Solid experience."
           },
           {
             "name": "HTML",
-            "score": 60,
-            "excellence": false,
-            "summary": "Good understanding of the basic structure, the basic tags and most of their attributes and properties. Slightly lacking experience in writing semantic HTML."
+            "score": 70,
+            "excellence": true,
+            "summary": "Solid knowledge - structure, tags, attributes and properties. Lacking experience in writing semantic HTML."
           },
           {
             "name": "CSS",
             "score": 70,
             "excellence": true,
-            "summary": "Good understanding of the normal flow, the basic layouts, the difference between inline and block, slightly lacking knowledge of browser support for the various vendors."
+            "summary": "Good knowledge - normal flow, basic layouts. Lacking knowledge of browser support for the various vendors."
+          },
+          {
+            "name": "C#",
+            "score": 70,
+            "excellence": true,
+            "summary": "Solid knowledge - Reflection, Streams, etc."
+          },
+          {
+            "name": "Node.JS",
+            "score": 70,
+            "excellence": true,
+            "summary": "Solid knowledge - event loop, streams, etc."
           },
           {
             "name": "Python",
-            "score": 30,
+            "score": 40,
             "excellence": false,
-            "summary": "Very basic understanding with very limited experience."
+            "summary": "Basic knowledge with very limited experience."
           }
         ]
       },
@@ -51,31 +56,37 @@
             "name": "jQuery",
             "score": 70,
             "excellence": true,
-            "summary": "Good understanding of jQuery DOM manipulations, AJAX, effects."
+            "summary": "Good knowledge - DOM manipulations, AJAX, effects."
           },
           {
             "name": "Bootstrap",
             "score": 70,
             "excellence": true,
-            "summary": "Good understanding of the bootstrap grid."
+            "summary": "Good knowledge."
+          },
+          {
+            "name": "AngularJS",
+            "score": 90,
+            "excellence": true,
+            "summary": "Solid experience with the framework, good knowledge of its inner workings, like the digests/change detection."
           },
           {
             "name": "Angular 2/4",
             "score": 70,
             "excellence": true,
-            "summary": "Good understanding of the basic building blocks, the dependency injection, the decorators and the metadata they are using, slightly lacking in terms of experience (this will probably change in the near future)."
+            "summary": "Good knowledge - basic building blocks, dependency injection, decorators and the metadata they are using."
           },
           {
             "name": "Responsive design",
             "score": 80,
             "excellence": true,
-            "summary": "Very good understanding of media queries, very good feeling for responsive UI."
+            "summary": "Very good knowledge of media queries, very good feeling for responsive UI."
           },
           {
             "name": "AJAX",
             "score": 90,
             "excellence": true,
-            "summary": "Very good understanding on asynchronous programming, higher order functions and Promises."
+            "summary": "Very good knowledge on asynchronous programming, higher order functions, Promises, async/await, etc."
           }
         ]
       },
@@ -83,28 +94,34 @@
         "label": "Back-end",
         "technologies": [
           {
-            "name": "Node.JS",
-            "score": 60,
-            "excellence": false,
-            "summary": "Good understanding of its modular and asynchronous nature."
-          },
-          {
             "name": "ExpressJS",
             "score": 80,
             "excellence": true,
-            "summary": "Good understanding of the way it works, the concept of its middlewares, the routing and the error handling it offers."
-          },
-          {
-            "name": "MongoDB",
-            "score": 60,
-            "excellence": false,
-            "summary": "Good understanding on how to use it for something small."
+            "summary": "Good knowledge - middlewares, routing, error handling."
           },
           {
             "name": "RESTful API",
             "score": 70,
             "excellence": true,
-            "summary": "Good understanding of RESTful APIs, able to create simple RESTful APIs with simple authentication methods"
+            "summary": "Good knowledge - RESTful APIs, simple authentication methods"
+          },
+          {
+            "name": "ASP.NET Core",
+            "score": 60,
+            "excellence": false,
+            "summary": "Good knowledge - middlewares, filters, attributes, MVC concept"
+          },
+          {
+            "name": "MongoDB",
+            "score": 60,
+            "excellence": false,
+            "summary": "Good knowledge."
+          },
+          {
+            "name": "SQL",
+            "score": 60,
+            "excellence": false,
+            "summary": "Good knowledge."
           }
         ]
       },
@@ -124,22 +141,22 @@
             "summary": "Good knowledge of how to use them, both in GUI and CLI, good understanding of the concept of Git Flow and decent experience with it."
           },
           {
-            "name": "Task runners",
+            "name": "Task runners / bundlers",
             "score": 60,
             "excellence": false,
-            "summary": "Good understanding of task runners in general (Gulp in particular)."
+            "summary": "Good understanding of task runners/bundlers - Gulp, Webpack."
           },
           {
             "name": "Testing frameworks",
-            "score": 50,
+            "score": 70,
             "excellence": false,
-            "summary": "Decent knowledge of unit testing frameworks (Mocha, Chai, Sinon), basic understanding of integration and browser tests, including some experience with Selenium Webdriver"
+            "summary": "Solid knowledge of unit testing frameworks (Mocha, Chai, Sinon, Karma, Jasmine), solid knowledge of integration and browser tests (Protractor), some experience with Selenium Webdriver."
           },
           {
             "name": "Algorithms and data structures",
-            "score": 30,
+            "score": 50,
             "excellence": false,
-            "summary": "Very basic understanding, but I am somewhat good at math so this might change very fast."
+            "summary": "Solid knowledge of algorith complexity, sorting and searching algorithms, tree structures."
           }
         ]
       }
