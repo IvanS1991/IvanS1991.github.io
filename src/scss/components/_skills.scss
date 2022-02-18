@@ -38,7 +38,6 @@
   }
 }
 
-
 .score {
   &-30 {
     @include score-box(60%, lightcoral);
@@ -60,5 +59,8 @@
   }
   &-90 {
     @include score-box(90%, rgb(128, 240, 231));
+  }
+  &-100 {
+    @include score-box(90%, rgb(130, 255, 245));
   }
 }

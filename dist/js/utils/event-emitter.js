@@ -1,1 +1,1 @@
-System.register([],function(t,e){"use strict";var r;e&&e.id;return{setters:[],execute:function(){r=function(){function t(){this.registry={}}return t.prototype.on=function(t,e){this.registry[t]||(this.registry[t]=e)},t.prototype.emit=function(t,e){this.registry[t](e)},t}(),t("MyEventEmitter",r)}}});
+System.register([],function(e,t){"use strict";t&&t.id;return{setters:[],execute:function(){function t(){this.registry={}}t.prototype.on=function(t,e){this.registry[t]||(this.registry[t]=e)},t.prototype.emit=function(t,e){this.registry[t](e)},e("MyEventEmitter",t)}}});
