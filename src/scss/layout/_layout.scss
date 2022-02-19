@@ -22,5 +22,20 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: lightblue;
+  background-color: palegoldenrod;
+}
+
+.lang-selector {
+  position: absolute;
+  right: 30px;
+  bottom: 50px;
+
+  a {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  img {
+    height: 30px;
+  }
 }

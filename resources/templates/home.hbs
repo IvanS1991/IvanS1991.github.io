@@ -1,31 +1,25 @@
-<h1>{{title}}</h1>
-{{#with this.en}}
-  <div class="home-container">
-    <div class="image-container">
-      <img src="{{this.picture}}" class="image-container__image" />
-      <h2 class="info-container__name">{{this.name}}</h2>
-    </div>
-    <div class="info-container">
-      <p class="info-container__brief-intro">{{this.briefIntro}}</p>
-      {{#each this.certificates}}
-        <a
-          href="{{this.url}}"
-          class="nav__button"
-          target="tab"
-        >{{this.title}}</a>
-      {{/each}}
-      <p class="info-container__brief-intro">{{this.thisWebsite}}</p>
-    </div>
+<h1>{{this.title}}</h1>
+<div class="home-container">
+  <div class="image-container">
+    <img src="{{this.picture}}" class="image-container__image" />
+    <h2 class="info-container__name">{{this.name}}</h2>
   </div>
-  <div class="perks">
-    {{#each this.perks}}
-      <div class="perks__item">
-        <h4 class="perks__item__name">{{this.name}}</h4>
-        <img src="{{this.symbol}}" class="perks__item__symbol" />
-        {{#if this.summary}}
-          <p class="perks__item__summary">{{this.summary}}</p>
-        {{/if}}
-      </div>
+  <div class="info-container">
+    <p class="info-container__brief-intro">{{this.briefIntro}}</p>
+    {{#each this.certificates}}
+      <a href="{{this.url}}" class="nav__button" target="tab">{{this.title}}</a>
     {{/each}}
+    <p class="info-container__brief-intro">{{this.thisWebsite}}</p>
   </div>
-{{/with}}
+</div>
+<div class="perks">
+  {{#each this.perks}}
+    <div class="perks__item">
+      <h4 class="perks__item__name">{{this.name}}</h4>
+      <img src="{{this.symbol}}" class="perks__item__symbol" />
+      {{#if this.summary}}
+        <p class="perks__item__summary">{{this.summary}}</p>
+      {{/if}}
+    </div>
+  {{/each}}
+</div>

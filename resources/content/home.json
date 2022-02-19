@@ -33,5 +33,40 @@
         "summary": ""
       }
     ]
+  },
+  "bg": {
+    "title": "Начало",
+    "name": "Иван Щърбанов",
+    "picture": "/resources/img/me.jpg",
+    "job": "Front-end разработчик",
+    "briefIntro": "Здравейте, казвам се Иван, на 30 години съм и съм сертифициран уеб разработчик с 4 години опит.",
+    "thisWebsite": "Може да разгледате проекти, върху които съм работил, също така може да видите груба оценка на уменията и опита ми.",
+    "certificates": [
+      {
+        "url": "https://my.telerikacademy.com/Certificates/Image/2354/0bae21fb",
+        "title": "Front-end сертификат от Телерик"
+      },
+      {
+        "url": "https://softuni.bg/certificates/details/117880/cbb7910a",
+        "title": "C# Developer сертификат от СофтУни"
+      }
+    ],
+    "perks": [
+      {
+        "symbol": "/resources/img/zoom.svg",
+        "name": "Внимание към детайла",
+        "summary": ""
+      },
+      {
+        "symbol": "/resources/img/clock.svg",
+        "name": "Предаване в срок",
+        "summary": ""
+      },
+      {
+        "symbol": "/resources/img/smile.svg",
+        "name": "Честност",
+        "summary": ""
+      }
+    ]
   }
 }

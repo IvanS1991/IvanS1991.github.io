@@ -1,5 +1,6 @@
 {
   "en": {
+    "title": "Some projects I've worked on",
     "list": [
       {
         "name": "SoftUni-AspNet-Core-Project",
@@ -34,6 +35,46 @@
       {
         "name": "art-1",
         "description": "Old website project",
+        "mainLanguage": "CSS / JavaScript / HTML"
+      }
+    ]
+  },
+  "bg": {
+    "title": "Част от проектите, върху които съм работил",
+    "list": [
+      {
+        "name": "SoftUni-AspNet-Core-Project",
+        "description": "Уеб приложение със сървърно рендериране, реализирано с ASP.NET Core бекенд, EntityFramework Core като DB ORM, JQuery за клиентската част.",
+        "mainLanguage": "C# / ASP.NET Core / JQuery"
+      },
+      {
+        "name": "blog-frontend-course-project",
+        "description": "Single page блог приложение, изрязано от PSD дизайн, използвани са разни библиотеки за фронтенда и прост Express RESTful API.",
+        "mainLanguage": "JavaScript / Node.js"
+      },
+      {
+        "name": "angular-course-project",
+        "description": "Single page форум приложение, реализирано чрез Angular 4 и прост Express RESTful API.",
+        "mainLanguage": "TypeScript / Node.js"
+      },
+      {
+        "name": "nodejs-course-project",
+        "description": "Уеб приложение със сървърно рендериране, библиотека за филми, реализирано чрез Express за бекенд и Pug темплейти за сървърното рендериране",
+        "mainLanguage": "JavaScript / Node.js"
+      },
+      {
+        "name": "soccerway-scraper",
+        "description": "Скрапер за футболни статистики от soccerway.com",
+        "mainLanguage": "JavaScript / Node.js"
+      },
+      {
+        "name": "imdb-data-scraper",
+        "description": "Скрапер за филми от imdb.com",
+        "mainLanguage": "JavaScript / Node.js"
+      },
+      {
+        "name": "art-1",
+        "description": "Стар проект на арт уебсайт.",
         "mainLanguage": "CSS / JavaScript / HTML"
       }
     ]

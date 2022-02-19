@@ -1,0 +1,1 @@
+System.register([],function(e,t){"use strict";t&&t.id;return{setters:[],execute:function(){e("getLocale",function(){return sessionStorage.getItem("locale")||"en"}),e("setLocale",function(e){sessionStorage.setItem("locale",e)})}}});

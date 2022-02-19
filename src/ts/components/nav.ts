@@ -1,7 +1,24 @@
 import "jquery";
 import { emitter } from "../page-events";
+import { Fetch } from "../utils/fetch";
 
-const init = (selectors): void => {
+const fetch: Fetch = new Fetch();
+
+const insertTemplate = async () => {
+  try {
+    const page = "nav-main";
+    const template = await fetch.template(page);
+    const content = await fetch.content(page);
+    const html = template(content);
+
+    $("header.header").html(html);
+  } catch {
+    console.warn("unable to insert nav");
+  }
+};
+
+const init = async (selectors): Promise<void> => {
+  await insertTemplate();
   const $nav: JQuery = $(`.${selectors.nav}`);
   const $navContainer: JQuery = $(`.${selectors.container}`);
   const $mobileTrigger: JQuery = $(`.${selectors.mobile}`);
