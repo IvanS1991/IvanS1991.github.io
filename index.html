@@ -16,54 +16,29 @@
 
   <body>
     <div class="main-wrapper">
-      <header class="header">
-        <nav class="nav-main">
-          <div class="nav">
-            <a href="#" class="nav__mobile"></a>
-            <ul class="nav__container">
-              <li class="nav__item">
-                <a href="#" class="nav__button" id="home" data-page="home"
-                  >Home</a
-                >
-              </li>
-              <li class="nav__item">
-                <a
-                  href="#"
-                  class="nav__button"
-                  id="projects"
-                  data-page="projects"
-                  >Projects</a
-                >
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__button" id="about" data-page="skills"
-                  >Skills</a
-                >
-              </li>
-              <li class="nav__item">
-                <a
-                  href="#"
-                  class="nav__button"
-                  id="contacts"
-                  data-page="contacts"
-                  >Contacts</a
-                >
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
+      <header class="header"></header>
       <section class="content"></section>
       <footer class="footer">
         <p>
-          You can see the repository of this webpage
           <a
             href="https://github.com/IvanS1991/IvanS1991.github.io"
             target="tab"
-            >here</a
+            >https://github.com/IvanS1991/IvanS1991.github.io</a
           >
         </p>
       </footer>
+    </div>
+    <div class="lang-selector">
+      <a href
+        ><img
+          src="/resources/img/bg.svg"
+          onclick="sessionStorage.setItem('locale', 'bg')"
+      /></a>
+      <a href
+        ><img
+          src="/resources/img/us.svg"
+          onclick="sessionStorage.setItem('locale', 'en')"
+      /></a>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.20.19/system.js"></script>

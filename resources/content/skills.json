@@ -1,5 +1,6 @@
 {
   "en": {
+    "title": "Honest evaluation of my skills",
     "info": {},
     "skills": [
       {
@@ -138,7 +139,7 @@
             "name": "Git / GitHub",
             "score": 70,
             "excellence": true,
-            "summary": "Good knowledge of how to use them, both in GUI and CLI, good understanding of the concept of Git Flow and decent experience with it."
+            "summary": "Good knowledge of how to use them, both in GUI and CLI."
           },
           {
             "name": "Task runners / bundlers",
@@ -151,6 +152,170 @@
             "score": 70,
             "excellence": false,
             "summary": "Solid knowledge of unit testing frameworks (Mocha, Chai, Sinon, Karma, Jasmine), solid knowledge of integration and browser tests (Protractor), some experience with Selenium Webdriver."
+          },
+          {
+            "name": "Algorithms and data structures",
+            "score": 50,
+            "excellence": false,
+            "summary": "Solid knowledge of algorith complexity, sorting and searching algorithms, tree structures."
+          }
+        ]
+      }
+    ]
+  },
+  "bg": {
+    "title": "Честна оценка на уменията ми",
+    "info": {},
+    "skills": [
+      {
+        "label": "Езици и суперсетове",
+        "technologies": [
+          {
+            "name": "JavaScript",
+            "score": 100,
+            "excellence": true,
+            "summary": "Сериозен опит с най-новите ES стандарти."
+          },
+          {
+            "name": "TypeScript",
+            "score": 100,
+            "excellence": true,
+            "summary": "Сериозен опит."
+          },
+          {
+            "name": "HTML",
+            "score": 70,
+            "excellence": true,
+            "summary": "Сериозни познания - структура, тагове, атрибути, пропъртита. Недостатъчен опит при писане на семантичен HTML."
+          },
+          {
+            "name": "CSS",
+            "score": 70,
+            "excellence": true,
+            "summary": "Добри познания - normal flow, основни лейаути. Недостатъчен опит с браузърната поддръжка на отделните функционалности."
+          },
+          {
+            "name": "C#",
+            "score": 70,
+            "excellence": true,
+            "summary": "Много добри познания - Reflection, Streams, т.н."
+          },
+          {
+            "name": "Node.JS",
+            "score": 70,
+            "excellence": true,
+            "summary": "Много добри познания - event loop, streams, т.н."
+          },
+          {
+            "name": "Python",
+            "score": 40,
+            "excellence": false,
+            "summary": "Основни познания и много ограничен опит."
+          }
+        ]
+      },
+      {
+        "label": "Front-end",
+        "technologies": [
+          {
+            "name": "jQuery",
+            "score": 70,
+            "excellence": true,
+            "summary": "Добри познания - DOM манипулации, AJAX, ефекти."
+          },
+          {
+            "name": "Bootstrap",
+            "score": 70,
+            "excellence": true,
+            "summary": "Добри познания."
+          },
+          {
+            "name": "AngularJS",
+            "score": 90,
+            "excellence": true,
+            "summary": "Голям опит, добри познания на вътрешностите на фреймуърка, като например digests/change detection."
+          },
+          {
+            "name": "Angular 2/4",
+            "score": 70,
+            "excellence": true,
+            "summary": "Добри познания - основни елементи, dependency injection, декоратори и метаданните, които те ползват."
+          },
+          {
+            "name": "Responsive design",
+            "score": 80,
+            "excellence": true,
+            "summary": "Добри познания за media queries, добро усещане за мобилен UI."
+          },
+          {
+            "name": "AJAX",
+            "score": 90,
+            "excellence": true,
+            "summary": "Много добри познания за асинхронно програмиране, функции от по-висок ред, Promises, async/await, т.н."
+          }
+        ]
+      },
+      {
+        "label": "Back-end",
+        "technologies": [
+          {
+            "name": "ExpressJS",
+            "score": 80,
+            "excellence": true,
+            "summary": "Добри познания - middlewares, routing, error handling."
+          },
+          {
+            "name": "RESTful API",
+            "score": 70,
+            "excellence": true,
+            "summary": "Добри познания - RESTful APIs, прости методи за автентикация."
+          },
+          {
+            "name": "ASP.NET Core",
+            "score": 60,
+            "excellence": false,
+            "summary": "Добри познания - middlewares, filters, attributes, MVC концепция."
+          },
+          {
+            "name": "MongoDB",
+            "score": 60,
+            "excellence": false,
+            "summary": "Добри познания."
+          },
+          {
+            "name": "SQL",
+            "score": 60,
+            "excellence": false,
+            "summary": "Добри познания."
+          }
+        ]
+      },
+      {
+        "label": "Other",
+        "technologies": [
+          {
+            "name": "Coding style",
+            "score": 80,
+            "excellence": true,
+            "summary": "Опитвам се да следвам добри практики, като използвам линтъри и style guides."
+          },
+          {
+            "name": "Git / GitHub",
+            "score": 70,
+            "excellence": true,
+            "summary": "Добри познания, опит с GUI и CLI."
+          },
+          {
+            "name": "Task runners / bundlers",
+            "score": 60,
+            "excellence": false,
+            "summary": "Добри познания за task runners/bundlers - Gulp, Webpack."
+          },
+          {
+            "name": "Testing frameworks",
+            "score": 70,
+            "excellence": false,
+            "summary": "Много добри познания за unit testing frameworks (Mocha, Chai, Sinon, Karma, Jasmine), много добри познания за integration и browser tests (Protractor), малък опит със Selenium Webdriver."
           },
           {
             "name": "Algorithms and data structures",

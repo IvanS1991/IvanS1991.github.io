@@ -1,11 +1,10 @@
 $nav__button-padding: 1em 0;
-$nav__button-border: 1px solid rgb(173, 173, 173);
+$nav__button-border: 1px solid darkgoldenrod;
 $nav__button-color: black;
 $nav__button-color_hover: lightgreen;
-$nav__button-background: lightblue;
+$nav__button-background: palegoldenrod;
 $nav__button-background_active: white;
 $nav__button-background_hover: brown;
-
 
 .nav {
   @media (max-width: $screen-medium) {
@@ -24,7 +23,7 @@ $nav__button-background_hover: brown;
     justify-content: space-between;
     list-style: none;
     transition: opacity $transition-delay;
-    
+
     @media (max-width: $screen-medium) {
       display: none;
       opacity: 0;
@@ -51,16 +50,17 @@ $nav__button-background_hover: brown;
   &__mobile {
     background: {
       color: $nav__button-background;
-      image: url('/resources/img/hamburger.svg');
-      repeat: no-repeat
-    };
+      image: url("/resources/img/hamburger.svg");
+      repeat: no-repeat;
+    }
     display: none;
     @media (max-width: $screen-medium) {
       display: block;
     }
   }
 
-  &__button, &__mobile {
+  &__button,
+  &__mobile {
     background-color: $nav__button-background;
     box-sizing: border-box;
     border: $nav__button-border;

@@ -1,4 +1,5 @@
-import Handlebars from 'handlebars';
+import Handlebars from "handlebars";
+import { getLocale } from "./locale";
 
 interface IContentElement {
   [key: string]: string;
@@ -29,10 +30,10 @@ class Fetch {
   private get(name: string, type: string, extension: string): Promise<any> {
     const path = `/resources/${type}/${name}.${extension}`;
     return new Promise((resolve, reject) => {
-      if (type === 'templates' && this.templateRegistry[name]) {
+      if (type === "templates" && this.templateRegistry[name]) {
         return resolve(this.templateRegistry[name]);
       }
-      if (type === 'content' && this.contentRegistry[name]) {
+      if (type === "content" && this.contentRegistry[name]) {
         return resolve(this.contentRegistry[name]);
       }
       $.get(path, (data: any) => {
@@ -42,17 +43,19 @@ class Fetch {
   }
 
   public template(name: string): Promise<HandlebarsTemplateDelegate> {
-    return this.get(name, 'templates', 'hbs')
-      .then((template) => {
-        if (!this.templateRegistry[name]) {
-          this.templateRegistry[name];
-        }
-        return Handlebars.compile(template);
-      });
+    return this.get(name, "templates", "hbs").then((template) => {
+      if (!this.templateRegistry[name]) {
+        this.templateRegistry[name];
+      }
+      return Handlebars.compile(template);
+    });
   }
 
   public content(name: string): Promise<IContent> {
-    return this.get(name, 'content', 'json');
+    return this.get(name, "content", "json").then((x) => {
+      const locale = getLocale();
+      return x[locale] || x[Object.keys(x)[0]];
+    });
   }
 }
 

@@ -1,4 +1,18 @@
 {
   "en": {
+    "title": "Contacts",
+    "formHelp": "You can send me an email by using the form below:",
+    "yourEmail": "Your email...",
+    "yourMessage": "Your message...",
+    "success": "Success!",
+    "somethingWentWrong": "Something went wrong!"
+  },
+  "bg": {
+    "title": "Контакти",
+    "formHelp": "Може да ми изпратите имейл чрез формата по-долу:",
+    "yourEmail": "Вашият имейл...",
+    "yourMessage": "Вашето съобщение...",
+    "success": "Успешно!",
+    "somethingWentWrong": "Нещо се обърка!"
   }
 }
