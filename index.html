@@ -1,63 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="/resources/img/favicon.ico" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="/dist/css/styles.css" />
+    <title>Ivan Shtarbanov - Front-end developer</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="icon" href="/resources/img/favicon.ico">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"/>
-  <link rel="stylesheet" type="text/css" href="/dist/css/styles.css"/>
-  <title>Ivan Shtarbanov - Front-end developer</title>
-</head>
+  <body>
+    <div class="main-wrapper">
+      <header class="header">
+        <nav class="nav-main">
+          <div class="nav">
+            <a href="#" class="nav__mobile"></a>
+            <ul class="nav__container">
+              <li class="nav__item">
+                <a href="#" class="nav__button" id="home" data-page="home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav__item">
+                <a
+                  href="#"
+                  class="nav__button"
+                  id="projects"
+                  data-page="projects"
+                  >Projects</a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__button" id="about" data-page="skills"
+                  >Skills</a
+                >
+              </li>
+              <li class="nav__item">
+                <a
+                  href="#"
+                  class="nav__button"
+                  id="contacts"
+                  data-page="contacts"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <section class="content"></section>
+      <footer class="footer">
+        <p>
+          You can see the repository of this webpage
+          <a
+            href="https://github.com/IvanS1991/IvanS1991.github.io"
+            target="tab"
+            >here</a
+          >
+        </p>
+      </footer>
+    </div>
 
-<body>
-  <div class="main-wrapper">
-    <header class="header">
-      <nav class="nav-main">
-        <div class="nav">
-          <a href="#" class="nav__mobile"></a>
-          <ul class="nav__container">
-            <li class="nav__item">
-              <a href="#" class="nav__button" id="home" data-page="home">Home</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__button" id="projects" data-page="projects">Projects</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__button" id="about" data-page="skills">Skills</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__button" id="contacts" data-page="contacts">Contacts</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <section class="content">
-
-    </section>
-    <footer class="footer">
-      <p>You can see the repository of this webpage <a href="https://github.com/IvanS1991/IvanS1991.github.io" target="tab">here</a></p>
-    </footer>
-  </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.20.19/system.js"></script>
-  <script>
-    System.config({
-      packages: {
-        './dist': {
-          defaultExtension: 'js',
-        }
-      },
-      map: {
-        'jquery': 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js',
-        'handlebars': 'https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js',
-        'app': '/dist/js/app.js'
-      }
-    });
-    System.import('app');
-  </script>
-</body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.20.19/system.js"></script>
+    <script>
+      System.config({
+        packages: {
+          "./dist": {
+            defaultExtension: "js",
+          },
+        },
+        map: {
+          jquery:
+            "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js",
+          handlebars:
+            "https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js",
+          app: "/dist/js/app.js",
+        },
+      });
+      System.import("app");
+    </script>
+  </body>
 </html>
